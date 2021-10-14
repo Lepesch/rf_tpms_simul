@@ -1,0 +1,7 @@
+create ssh in /boot
+sudo apt-get update -y
+sudo apt-get upgrade -y
+sudo apt-get  install hackrf -y
+sudo raspi-config #enable the serial port in terface options
+copy rf_tpms_simul to /usr/local/bin/
+crontab -e --->@reboot sudo /usr/local/bin/rf_tpms_simul
